@@ -1,0 +1,78 @@
+body {	
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+	font-family: 'Nunito', sans-serif;
+	margin: 5px;
+}
+
+.jumbotron {
+	height: 450px;
+	background-image: url(../images/background-image.jpg);
+	color: white;
+}
+
+.jumbotron h1, .jumbotron p {
+	color: white !important;
+	margin: 5px;
+}
+.jumbotron.btn.btn-primary {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.flexend {
+	display: flex;
+	justify-content: flex-end;
+}
+.google-play {
+	max-width: 150px;
+}
+.bg-primary {
+	background-color: #52C0DE !important;
+}
+
+.btn {
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-primary{
+	background-color: transparent;
+	border: 1px solid #52C0DE;
+	border-radius:25px;
+	font-size: 18px;
+	font-family: 'Nunito', sans-serif;
+	transition: background-color 0.5s linear;
+}
+
+.btn-primary:hover{
+	background-color:#FAAA00;
+	border: 1px solid transparent;
+}
+#Home {
+	background-color: red;
+}
+#Features {
+	background-color: #52C0DE;
+
+}
+#Features p {
+	color: white;
+}
+#Features, #AboutUS, #Contact {
+	padding-top: 100px; 
+	height: 900px;
+}
+
+
+@media (min-width: 1200px) {
+.pepito.container {
+    max-width: 500px;
+}
+}
+
+

@@ -1,0 +1,24 @@
+/* variables */
+
+$fondo: #000000;
+
+/* Mixin: código re-utilizable */
+
+@mixin bordesRedondos($valor) {
+    border-radius: $valor;
+}
+
+
+/* para que la barra de navegación no tape el contenido inicial */
+
+body {
+    padding-top: 54px;
+}
+
+
+/* Ejemplo de uso del mixin definido */
+
+.aplicarBordesRedondos {
+    /* al aplicar esta clase, hará que las esquinas se hagan redondas */
+    @include bordesRedondos(25px);
+}
