@@ -6,7 +6,18 @@ h1, h2 {
 	font-family: 'Nunito', sans-serif;
 	margin: 5px;
 }
+.midnightHeader.default {
+	background-color: #52C0DE 
+	height:50px;
+	font-size: 14px;
+	color: white;
 
+}
+
+.midnightHeader.darks {
+	background-color: black;
+	height:50px;
+}
 .jumbotron {
 	height: 450px;
 	background-image: url(../images/background-image.jpg);
@@ -17,17 +28,14 @@ h1, h2 {
 	color: white !important;
 	margin: 5px;
 }
-.jumbotron.btn.btn-primary {
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-}
+
 .flexend {
 	display: flex;
 	justify-content: flex-end;
 }
+
 .google-play {
-	max-width: 150px;
+	max-width: 200px;
 }
 .bg-primary {
 	background-color: #52C0DE !important;
@@ -35,9 +43,8 @@ h1, h2 {
 
 .btn {
 	width: 200px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	margin:auto;
 }
 
 .btn-primary{
@@ -53,8 +60,13 @@ h1, h2 {
 	background-color:#FAAA00;
 	border: 1px solid transparent;
 }
+
+.rounded-circle {
+	height: 200px;
+	width: 200px;
+}
 #Home {
-	background-color: red;
+	background-color: white;
 }
 #Features {
 	background-color: #52C0DE;
@@ -63,16 +75,28 @@ h1, h2 {
 #Features p {
 	color: white;
 }
-#Features, #AboutUS, #Contact {
-	padding-top: 100px; 
-	height: 900px;
+#AboutUs {
+	background-color: white;
+	color: black;
+}
+#Contact {
+	background-color: #282830;
+	color: white;
+}
+#Features, #AboutUs, #Contact {
+	padding-top: 100px;
+	padding-bottom: 50px; 
 }
 
 
 @media (min-width: 1200px) {
-.pepito.container {
-    max-width: 500px;
+.thin-center.container {
+    max-width: 600px;
 }
 }
 
-
+@media (min-width: 1200px) {
+.medium-center.container {
+    max-width: 800px;
+}
+}
