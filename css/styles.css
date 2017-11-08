@@ -15,8 +15,10 @@ h1, h2 {
 }
 
 .midnightHeader.darks {
-	background-color: black;
-	height:150px;
+	background-color: #282830;
+	height:50px;
+	font-size: 14px;
+	color: white;
 }
 
 .jumbotron {
@@ -83,8 +85,8 @@ h1, h2 {
 }
 
 .rounded-circle {
-	height: 200px;
-	width: 200px;
+	height: 125px;
+	width: 125px;
 }
 
 .social-buttons {
@@ -113,7 +115,8 @@ h1, h2 {
 }
 #AboutUs {
 	background-color: white;
-	color: black;
+	color: #282830;
+	height: 500px;
 }
 #Contact {
 	background-color: #282830;
