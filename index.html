@@ -10,6 +10,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#Home">Inicio              </a>
+                        <a class="nav-link" href="#Home">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Features">Be Vegan</a>
@@ -47,10 +48,10 @@
                 <a class="btn btn-primary" href="https://play.google.com/store/apps?hl=es" role="button">Descargar</a>
             </div>
             <div class="flexend">
-                <img src="images/mundo.svg">
+                <img class="map" src="images/mundo.svg">
             </div>
         </div>
-        <div class="container">
+        <div class="container playstore">
             <h2 class="my-4"> Formá parte del primer mapa <br> interactivo que te acerca a todo <br>lo que tiene que ver con vos!</h2>
             <img class="google-play" src="images/google-play.svg">
         </div>
@@ -117,13 +118,19 @@
     <section id="Contact" data-midnight="default">
         <div class="container">
             <h1 class="my-4 text-center ">Empezá a vivir el veganismo de una manera más simple y accesible</h1>
-            <div><img style="height: 400px;margin:auto;" src="images/pixel.png"></div>
-            <div class="align-bottom">
+            <div class="app">
+              <img style="height: 400px;margin:auto;" src="images/pixel.png">
+            </div>
+            <div class="align-bottom second">
                 <a class="btn btn-primary" href="https://play.google.com/store/apps?hl=es" role="button">Descargar</a>
             </div>
             <div class="row">
-                <div class="col">Todos los derechos reservados beVegan</div>
-                <div class="col">iconos redes sociales</div>
+                <div class="col"><p>Todos los derechos reservados beVegan</p></div>
+                <div class="col social-buttons">
+                  <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -134,7 +141,8 @@
 
 </html>
 <!-- midnight jquery scripts -->
-<script src="midnight.jquery.min.js "></script>
+<script src="jquery/jquery.js"></script>
+<script src="jquery/midnight.jquery.min.js "></script>
 <script>
 // Start midnight
 $(document).ready(function() {

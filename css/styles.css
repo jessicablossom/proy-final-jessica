@@ -1,4 +1,4 @@
-body {	
+body {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -8,26 +8,30 @@ h1, h2 {
 }
 
 .midnightHeader.default {
-	background-color: #52C0DE 
+	background-color: #52C0DE
 	height:50px;
 	font-size: 14px;
 	color: white;
-
 }
 
 .midnightHeader.darks {
 	background-color: black;
-	height:70px;
+	height:150px;
 }
+
 .jumbotron {
-	height: 450px;
+	height: 585px;
 	background-image: url(../images/background-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -80px;
 	color: white;
+	padding-top: 10%;
 }
 
 .jumbotron h1, .jumbotron p {
 	color: white !important;
-	margin: 5px;
+	margin: 0px;
 }
 
 .flexend {
@@ -35,9 +39,21 @@ h1, h2 {
 	justify-content: flex-end;
 }
 
+.app {
+	display: flex;
+	justify-content: center;
+}
+.app img {
+	border-radius: 5px;
+}
+.container.playstore {
+	padding-bottom: 20px;
+}
+
 .google-play {
 	max-width: 200px;
 }
+
 .bg-primary {
 	background-color: #52C0DE !important;
 }
@@ -62,10 +78,29 @@ h1, h2 {
 	border: 1px solid transparent;
 }
 
+.align-bottom.second {
+	padding: 20px;
+}
+
 .rounded-circle {
 	height: 200px;
 	width: 200px;
 }
+
+.social-buttons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-buttons a {
+	text-decoration: none;
+	color: white;
+}
+
+.fa {
+	margin-left: 10px;
+}
+
 #Home {
 	background-color: white;
 }
@@ -86,7 +121,7 @@ h1, h2 {
 }
 #Features, #AboutUs, #Contact {
 	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 }
 
 
