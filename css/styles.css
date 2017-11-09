@@ -7,6 +7,10 @@ h1, h2 {
 	margin: 5px;
 }
 
+.navbar.darks {
+    background-color: #282830 !important;
+}
+
 .midnightHeader.default {
 	background-color: #52C0DE
 	height:50px;
