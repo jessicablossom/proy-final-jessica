@@ -22,7 +22,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#Home">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -47,12 +47,17 @@
             <div class="align-bottom">
                 <a class="btn btn-primary" href="https://play.google.com/store/apps?hl=es" role="button">Descargar</a>
             </div>
+            <div class="map position-absolute">
+                <img src="images/mundo.svg">
+            </div>
+            <!-- 
             <div class="flexend">
                 <img class="map" src="images/mundo.svg">
             </div>
+        -->
         </div>
         <div class="container playstore">
-            <h2 class="my-4"> Formá parte del primer mapa <br> interactivo que te acerca a todo <br>lo que tiene que ver con vos!</h2>
+            <h2 class="my-4"> Formá parte del primer mapa interactivo que te acerca a todo lo que tiene que ver con vos!</h2>
             <img class="google-play" src="images/google-play.svg">
         </div>
     </section>
@@ -77,19 +82,20 @@
                     <p>Te vamos a recomendar comercios y tiendas online con las últimas novedades en productos!</p>
                 </div>
                 <div class="col-md-6 text-center ">
-                    <div><img style="height: 200px" src="images/vegetables.png "></div>
+                    <div><img src="images/vegetables.svg "></div>
                     <h2 class="my-4 ">Variedad de Productos</h2>
                     <p>BeVegan te ofrece un catálogo completo de productos e ingredientes aptos!</p>
                 </div>
             </div>
+            <h6 class="my-4 text-center ">* Todo el contenido es chequeado, curado y gestionado por mediadores de la comunidad.</h6>
         </div>
-        <h6 class="my-4 text-center ">* Todo el contenido es chequeado, curado y gestionado por mediadores de la comunidad.</h6>>
+        
     </section>
     <!-- section nosotros -->
     <section id="AboutUs" data-midnight="darks">
-        <h1 class="my-4 text-center">Quiénes Somos?</h1>
-        <h6 class="my-4 text-center">Un grupo de nerds preocupados por una problematica intentando brindar una solución accesible para la comunidad.</h6>
-        <div class="container medium-center ">
+        <div class="container medium-center">
+            <h1 class="my-4 text-center">Quiénes Somos?</h1>
+            <h6 class="my-4 text-center">Un grupo de nerds preocupados por una problematica intentando brindar una solución accesible para la comunidad.</h6>
             <div class="row ">
                 <div class="col-md-3 text-center">
                     <div><img src="images/rocio.jpg" class="rounded-circle"></div>
@@ -103,7 +109,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div><img src="images/jess.jpg" class="rounded-circle"></div>
-                    <h4>Jessica Francavilla</h4>
+                    <h4>Jess Francavilla</h4>
                     <p>Analista QA / QC</p>
                 </div>
                 <div class="col-md-3 text-center">
@@ -119,16 +125,16 @@
         <div class="container">
             <h1 class="my-4 text-center ">Empezá a vivir el veganismo de una manera más simple y accesible</h1>
             <div class="app">
-                <img style="height: 400px;margin:auto;" src="images/pixel.png">
+                <!--<img style="height: 400px;margin:auto;" src="images/pixel.png">-->
             </div>
             <div class="align-bottom second">
                 <a class="btn btn-primary" href="https://play.google.com/store/apps?hl=es" role="button">Descargar</a>
             </div>
             <div class="row">
-                <div class="col">
-                    <small>Todos los derechos reservados beVegan</small>
+                <div class="col-md-6 my-4">
+                    <p>Todos los derechos reservados beVegan 2017</p>
                 </div>
-                <div class="col social-buttons">
+                <div class="col-md-6 my-4 social-buttons">
                     <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
@@ -149,5 +155,11 @@
 // Start midnight
 $(document).ready(function() {
     $('.navbar.fixed-top').midnight();
+
+    $('.nav-item a').click(function() {
+        $(this).addClass("active");
+        $('.nav-item a').not(this).removeClass("active");
+
+    })
 });
 </script>

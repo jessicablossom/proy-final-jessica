@@ -48,6 +48,15 @@ h1, h2 {
 .app img {
 	border-radius: 5px;
 }
+.map {
+	right: 0;
+}
+.map img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
 .container.playstore {
 	padding-bottom: 20px;
 }
@@ -97,10 +106,16 @@ h1, h2 {
 .social-buttons a {
 	text-decoration: none;
 	color: white;
+	font-size: 30px;
+	transition: color 0.5s linear;
+}
+
+.social-buttons a:hover {
+	color: #FAAA00;
 }
 
 .fa {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 #Home {
@@ -118,6 +133,7 @@ h1, h2 {
 	color: #282830;
 	height: 500px;
 }
+
 #Contact {
 	background-color: #282830;
 	color: white;
@@ -126,6 +142,8 @@ h1, h2 {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
+
 
 
 @media (min-width: 1200px) {
@@ -139,3 +157,40 @@ h1, h2 {
     max-width: 800px;
 }
 }
+@media (max-width: 991px) {
+.map {
+	left: 0;
+
+}
+.map img {
+	max-width: 30%;
+	padding-top: 50px;
+}
+.jumbotron {
+	background-position: 0 0;
+}
+.my-4 h2, h6, p {
+	text-align: center;
+	font-size: 1.25em;
+}
+.google-play {
+	display: block;
+	margin: auto;
+	max-width: 40%;
+}
+.social-buttons {
+	display: flex;
+	justify-content: center;
+}
+.fa {
+	margin-left: 25px;
+}
+
+}
+@media (max-width: 767px) {
+	#AboutUs {
+	min-height: 1080px;
+}
+
+}
+
