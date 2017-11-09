@@ -17,11 +17,11 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top bg-primary">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="buttonNavBar" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#Home">Inicio</a>
                     </li>
@@ -50,7 +50,7 @@
             <div class="map position-absolute">
                 <img src="images/mundo.svg">
             </div>
-            <!-- 
+            <!--
             <div class="flexend">
                 <img class="map" src="images/mundo.svg">
             </div>
@@ -90,7 +90,7 @@
             </div>
             <h6 class="my-4 text-center ">* Todo el contenido es chequeado, curado y gestionado por mediadores de la comunidad.</h6>
         </div>
-        
+
     </section>
     <!-- section nosotros -->
     <section id="AboutUs" data-midnight="darks">
@@ -143,24 +143,33 @@
             </div>
         </div>
     </section>
-    <!-- Bootstrap JavaScript -->
-    <script src="js/jquery/jquery.min.js "></script>
-    <script src="js/bootstrap.bundle.min.js "></script>
 </body>
 
 </html>
+<!-- jQuery -->
+<script src="jquery/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="js/bootstrap.bundle.min.js "></script>
 <!-- midnight jquery scripts -->
-<script src="jquery/jquery.js"></script>
-<script src="jquery/midnight.jquery.min.js "></script>
+<!-- <script src="jquery/midnight.jquery.min.js "></script> -->
 <script>
 // Start midnight
 $(document).ready(function() {
-    $('.navbar.fixed-top').midnight();
+
+    //$('.navbar.fixed-top').midnight();
 
     $('.nav-item a').click(function() {
         $(this).addClass("active");
         $('.nav-item a').not(this).removeClass("active");
+    });
 
-    })
+    window.addEventListener('scroll', function(e) {
+        if (window.scrollY >= $('#Features').offset().top && !$('nav.navbar').hasClass('darks')) {
+            $('nav.navbar').addClass('darks');
+        }
+        if (window.scrollY < $('#Features').offset().top && $('nav.navbar').hasClass('darks')) {
+            $('nav.navbar').removeClass('darks');
+        }
+    });
 });
 </script>
