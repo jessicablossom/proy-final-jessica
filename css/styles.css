@@ -192,7 +192,7 @@ h1, h2 {
 }
 @media (max-width: 767px) {
 	#AboutUs {
-	min-height: 1280px;
+	min-height: 1180px;
 }
 
 }
