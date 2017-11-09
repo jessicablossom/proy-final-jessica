@@ -185,7 +185,10 @@ h1, h2 {
 .fa {
 	margin-left: 25px;
 }
-
+.btn-primary{
+	background-color:#FAAA00;
+	border: 1px solid transparent;
+}
 }
 @media (max-width: 767px) {
 	#AboutUs {
